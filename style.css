@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #fce4ec; /* Light pink background */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.proposal-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 90%;
+    width: 500px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1, h2 {
+    color: #e91e63; /* Pink color */
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.proposal-buttons {
+    margin-top: 20px;
+}
+
+#yes-btn {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#yes-btn:hover {
+    background-color: #d81b60;
+}
+
+#thank-you-message.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    .proposal-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    #yes-btn {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}
